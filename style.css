@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-bar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+header {
+  margin-bottom: 3em;
+}
+
+.burger {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  height: 2px;
+  width: 70%;
+  background-color: #f4821e;
+  margin-top: 2px;
+}
+
+ul a,
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-cont {
+  display: flex;
+}
+
+.list-item {
+  padding: 0 20px;
+  color: #000;
+}
+
+.list-item:hover {
+  color: #06a7df;
+  font-weight: bolder;
+}
+
+.banner {
+  height: 90vh;
+  background-image: url(img/bg.png);
+}
+
+.banner,
+.hero,
+.facilities-hero,
+.contact-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner-height {
+  height: 80vh;
+}
+
+.hero {
+  background-image: url(img/roombg.png);
+}
+
+.facilities-hero {
+  background-image: url(img/bg3.png);
+}
+
+.contact-hero {
+  background-image: url(img/bg4.png);
+}
+
+.chevrons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.chevrons .arrows {
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-inner-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-icon h3 {
+  padding-left: 5px;
+  align-items: center;
+}
+
+.h3-color {
+  color: #06a7df;
+}
+
+.h3-padding {
+  padding-left: 4px;
+}
+
+.room-location {
+  margin-bottom: 3rem;
+}
+
+.location button,
+.select-btn {
+  padding: 10px 30px;
+  font-size: 17px;
+  border: none;
+  background-color: #06a7df;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.select-btn {
+  border-radius: unset;
+  font-style: Light;
+  font-size: 13px;
+}
+
+.room-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
+  margin: 50px;
+  grid-gap: 55px;
+}
+
+.room-showcase img {
+  height: 90%;
+  width: 100%;
+}
+
+.room-showcase h3 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.second-main {
+  background-image: url(./img/bg2.png);
+  height: 100vh;
+  margin-top: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.second-main-inner-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  color: #fff;
+}
+
+.second-main-inner-icon h3 {
+  padding-left: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+
+.second-main-inner-icon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.second-main-inner-icon2 img {
+  width: 3%;
+  height: 3%;
+}
+
+.second-main-inner-icon2 p {
+  color: #fff;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hero-drop-cont {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+}
+
+.hero-drop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 30px;
+}
+
+.last-hero-drop {
+  background: #f4821e;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #fff;
+}
+
+.second-hero-drop {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.5rem;
+}
+
+.input-ele {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #06a7df;
+  padding: 35px 20px;
+}
+
+input {
+  height: 30px;
+  padding: 3px;
+  outline: none;
+}
+
+.input-ele p {
+  height: 30px;
+  background-color: #f4821e;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.subscribe-text {
+  padding: 0 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.room-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 50px;
+  grid-gap: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.room-desc h1 {
+  margin-bottom: 1rem;
+  color: #f4821e;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.price-sec h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.head-rooms {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.fac-main {
+  margin: 30px 0;
+}
+
+.facilities-mag {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.form-main {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+form {
+  margin: 5rem 0;
+}
+
+.input-width {
+  width: 100%;
+  margin-top: 2rem;
+  background: #e5e5e5;
+  border: none;
+  font-weight: bolder;
+  padding: 25px 10px;
+}
+
+.name-input-width {
+  background: #e5e5e5;
+  border: none;
+  font-weight: bolder;
+  padding: 25px 10px;
+}
+
+textarea {
+  outline: none;
+  padding: 20px 10px;
+  font-weight: bolder;
+}
+
+.send-btn {
+  background-color: #f4821e;
+  padding: 10px 30px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.send-btn:hover {
+  background-color: #06a7df;
+  color: #000;
+}
+
+.footer-list:hover {
+  color: #fff;
+}
+
+.con-main {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+
+  body {
+    margin: 0 10px;
+  }
+
+  .hero-drop-cont {
+    bottom: 300px;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+  }
+
+  .hero-drop {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 30px;
+  }
+
+  .hero-drop p {
+    font-size: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .location {
+    width: 100%;
+    display: flex;
+  }
+
+  .inner-icon {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .home-cir {
+    font-size: 20px;
+  }
+
+  .location button,
+  .select-btn {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+
+  .inner-icon h3 {
+    padding-left: 5px;
+    font-size: 15px;
+  }
+
+  .room-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 10px;
+  }
+
+  .room-img {
+    width: 100px;
+    height: 100vh;
+  }
+
+  footer {
+    display: block;
+    background-color: #06a7df;
+  }
+
+  .footer-nav {
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+
+  .subscribe-text {
+    padding: 5px 0;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .footer-list {
+    font-size: 12px;
+  }
+
+  .mobile-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-main {
+    height: 60vh;
+  }
+}
